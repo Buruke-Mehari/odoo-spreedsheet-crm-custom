@@ -1,0 +1,396 @@
+{
+    "version": 12,
+    "sheets": [
+        {
+            "id": "sheet1",
+            "name": "Dashboard",
+            "colNumber": 7,
+            "rowNumber": 53,
+            "rows": {
+                "6": { "size": 40 },
+                "23": { "size": 40 },
+                "40": { "size": 40 },
+                "41": { "size": 40 }
+            },
+            "cols": {
+                "0": { "size": 275 },
+                "1": { "size": 100 },
+                "2": { "size": 100 },
+                "3": { "size": 50 },
+                "4": { "size": 275 },
+                "5": { "size": 100 },
+                "6": { "size": 100 }
+            },
+            "merges": [],
+            "cells": {
+                "A7": {
+                    "style": 1,
+                    "content": "[Pipeline Distribution by Expected Revenue](odoo://view/{\"viewType\":\"graph\",\"action\":{\"domain\":[],\"context\":{\"group_by\":[\"stage_id\"],\"graph_measure\":\"expected_revenue\",\"graph_mode\":\"bar\",\"graph_groupbys\":[\"stage_id\"]},\"modelName\":\"crm.lead\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Revenue by Stage Analysis\"})",
+                    "border": 1
+                },
+                "A24": {
+                    "style": 1,
+                    "content": "[Pipeline Volume by Lead Count](odoo://view/{\"viewType\":\"graph\",\"action\":{\"domain\":[],\"context\":{\"group_by\":[\"stage_id\"],\"graph_measure\":\"__count\",\"graph_mode\":\"bar\",\"graph_groupbys\":[\"stage_id\"]},\"modelName\":\"crm.lead\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Lead Allocation Volume\"})",
+                    "border": 1
+                },
+                "A41": {
+                    "style": 1,
+                    "content": "[Pipeline Metrics by Stage](odoo://view/{\"viewType\":\"pivot\",\"action\":{\"domain\":[],\"context\":{\"group_by\":[\"stage_id\"],\"pivot_measures\":[\"__count\",\"expected_revenue\"],\"pivot_column_groupby\":[],\"pivot_row_groupby\":[\"stage_id\"]},\"modelName\":\"crm.lead\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"CRM Stage Performance Analysis\"})",
+                    "border": 1
+                },
+                "A42": { "style": 2, "content": "=_t(\"Stage\")", "border": 2 },
+                "A43": { "style": 3, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",1)" },
+                "A44": { "style": 4, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",2)" },
+                "A45": { "style": 3, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",3)" },
+                "A46": { "style": 4, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",4)" },
+                "A47": { "style": 3, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",5)" },
+                "A48": { "style": 4, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",6)" },
+                "A49": { "style": 3, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",7)" },
+                "A50": { "style": 4, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",8)" },
+                "A51": { "style": 3, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",9)" },
+                "A52": { "style": 4, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",10)" },
+                
+                "B42": { "style": 5, "content": "=_t(\"Leads\")", "border": 2 },
+                "B43": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",1)" },
+                "B44": { "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",2)" },
+                "B45": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",3)" },
+                "B46": { "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",4)" },
+                "B47": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",5)" },
+                "B48": { "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",6)" },
+                "B49": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",7)" },
+                "B50": { "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",8)" },
+                "B51": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",9)" },
+                "B52": { "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",10)" },
+                
+                "C42": { "style": 5, "content": "=_t(\"Expected Revenue\")", "border": 2 },
+                "C43": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",1)" },
+                "C44": { "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",2)" },
+                "C45": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",3)" },
+                "C46": { "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",4)" },
+                "C47": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",5)" },
+                "C48": { "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",6)" },
+                "C49": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",7)" },
+                "C50": { "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",8)" },
+                "C51": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",9)" },
+                "C52": { "format": 1, "content": "=ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",10)" },
+                
+                "E7": { "style": 7, "border": 1 },
+                "E41": {
+                    "style": 1,
+                    "content": "[Pipeline Metrics by Salesperson](odoo://view/{\"viewType\":\"pivot\",\"action\":{\"domain\":[],\"context\":{\"group_by\":[\"user_id\"],\"pivot_measures\":[\"__count\",\"expected_revenue\"],\"pivot_column_groupby\":[],\"pivot_row_groupby\":[\"user_id\"]},\"modelName\":\"crm.lead\",\"views\":[[false,\"graph\"],[false,\"pivot\"],[false,\"search\"]]},\"threshold\":0,\"name\":\"Salesperson Allocation Analysis\"})",
+                    "border": 1
+                },
+                "E42": { "style": 2, "content": "=_t(\"Salesperson\")", "border": 2 },
+                "E43": { "style": 3, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",1)" },
+                "E44": { "style": 4, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",2)" },
+                "E45": { "style": 3, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",3)" },
+                "E46": { "style": 4, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",4)" },
+                "E47": { "style": 3, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",5)" },
+                "E48": { "style": 4, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",6)" },
+                "E49": { "style": 3, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",7)" },
+                "E50": { "style": 4, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",8)" },
+                "E51": { "style": 3, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",9)" },
+                "E52": { "style": 4, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",10)" },
+                
+                "F42": { "style": 5, "content": "=_t(\"Leads\")", "border": 2 },
+                "F43": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",1)" },
+                "F44": { "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",2)" },
+                "F45": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",3)" },
+                "F46": { "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",4)" },
+                "F47": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",5)" },
+                "F48": { "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",6)" },
+                "F49": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",7)" },
+                "F50": { "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",8)" },
+                "F51": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",9)" },
+                "F52": { "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",10)" },
+                
+                "G42": { "style": 5, "content": "=_t(\"Expected Revenue\")", "border": 2 },
+                "G43": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",1)" },
+                "G44": { "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",2)" },
+                "G45": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",3)" },
+                "G46": { "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",4)" },
+                "G47": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",5)" },
+                "G48": { "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",6)" },
+                "G49": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",7)" },
+                "G50": { "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",8)" },
+                "G51": { "style": 6, "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",9)" },
+                "G52": { "format": 1, "content": "=ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",10)" },
+                
+                "A8": { "border": 2 }, "A25": { "border": 2 },
+                "B7": { "border": 1 }, "B8": { "border": 2 }, "B24": { "border": 1 }, "B25": { "border": 2 }, "B41": { "border": 1 },
+                "C7": { "border": 1 }, "C8": { "border": 2 }, "C24": { "border": 1 }, "C25": { "border": 2 }, "C41": { "border": 1 },
+                "D7": { "border": 1 }, "D8": { "border": 2 }, "D24": { "border": 1 }, "D25": { "border": 2 },
+                "E8": { "border": 2 }, "E24": { "border": 1 }, "E25": { "border": 2 },
+                "F7": { "border": 1 }, "F8": { "border": 2 }, "F24": { "border": 1 }, "F25": { "border": 2 }, "F41": { "border": 1 },
+                "G7": { "border": 1 }, "G8": { "border": 2 }, "G24": { "border": 1 }, "G25": { "border": 2 }, "G41": { "border": 1 }
+            },
+            "conditionalFormats": [],
+            "figures": [
+                {
+                    "id": "e35856cf-9090-489b-b055-2d441380d954",
+                    "x": 0,
+                    "y": 178,
+                    "width": 1000,
+                    "height": 345,
+                    "tag": "chart",
+                    "data": {
+                        "title": "",
+                        "background": "#FFFFFF",
+                        "legendPosition": "none",
+                        "metaData": {
+                            "groupBy": ["stage_id"],
+                            "measure": "expected_revenue",
+                            "order": "DESC",
+                            "resModel": "crm.lead"
+                        },
+                        "searchParams": {
+                            "comparison": null,
+                            "context": { "group_by_no_leaf": 1, "group_by": [] },
+                            "domain": [],
+                            "groupBy": ["stage_id"],
+                            "orderBy": []
+                        },
+                        "type": "odoo_bar",
+                        "verticalAxisPosition": "left",
+                        "stacked": true
+                    }
+                },
+                {
+                    "id": "d0171069-d2cd-4c2c-a686-cd7515e93bb5",
+                    "x": 0,
+                    "y": 586,
+                    "width": 1000,
+                    "height": 345,
+                    "tag": "chart",
+                    "data": {
+                        "title": "",
+                        "background": "#FFFFFF",
+                        "legendPosition": "none",
+                        "metaData": {
+                            "groupBy": ["stage_id"],
+                            "measure": "__count",
+                            "order": "DESC",
+                            "resModel": "crm.lead"
+                        },
+                        "searchParams": {
+                            "comparison": null,
+                            "context": { "group_by_no_leaf": 1, "group_by": [] },
+                            "domain": [],
+                            "groupBy": ["stage_id"],
+                            "orderBy": []
+                        },
+                        "type": "odoo_bar",
+                        "verticalAxisPosition": "left",
+                        "stacked": true
+                    }
+                },
+                {
+                    "id": "5f383918-4073-4f19-9cc9-603216c953ad",
+                    "x": 0,
+                    "y": 0,
+                    "width": 450,
+                    "height": 120,
+                    "tag": "chart",
+                    "data": {
+                        "baselineColorDown": "#DC6965",
+                        "baselineColorUp": "#00A04A",
+                        "baselineMode": "text",
+                        "title": "Top Stage Pipeline",
+                        "type": "scorecard",
+                        "background": "",
+                        "baseline": "Data!C2",
+                        "baselineDescr": "leads accumulated",
+                        "keyValue": "Data!B2"
+                    }
+                },
+                {
+                    "id": "ec57f69b-f2b1-4dfc-990c-91ab61b526bf",
+                    "x": 500,
+                    "y": 0,
+                    "width": 450,
+                    "height": 120,
+                    "tag": "chart",
+                    "data": {
+                        "baselineColorDown": "#DC6965",
+                        "baselineColorUp": "#00A04A",
+                        "baselineMode": "text",
+                        "title": "Top Performer",
+                        "type": "scorecard",
+                        "background": "",
+                        "baseline": "Data!C3",
+                        "baselineDescr": "leads assigned",
+                        "keyValue": "Data!B3"
+                    }
+                }
+            ],
+            "areGridLinesVisible": true,
+            "isVisible": true
+        },
+        {
+            "id": "a83a78f2-b124-4d6f-9726-125e62a32b8d",
+            "name": "Data",
+            "colNumber": 23,
+            "rowNumber": 88,
+            "rows": {},
+            "cols": {},
+            "merges": [],
+            "cells": {
+                "A1": { "style": 6, "content": "=_t(\"KPI Metrics Engine\")" },
+                "A2": { "style": 6, "content": "=_t(\"Highest Volume Stage\")" },
+                "A3": { "style": 6, "content": "=_t(\"Highest Volume Agent\")" },
+                
+                "B1": { "style": 6, "content": "=_t(\"Dimension Label\")" },
+                "B2": { "style": 8, "content": "=ODOO.PIVOT.HEADER(1,\"#stage_id\",1)" },
+                "B3": { "style": 8, "content": "=ODOO.PIVOT.HEADER(2,\"#user_id\",1)" },
+                
+                "C1": { "style": 6, "content": "=_t(\"Lead Volume\")" },
+                "C2": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(1,\"__count\",\"#stage_id\",1)" },
+                "C3": { "style": 6, "format": 2, "content": "=ODOO.PIVOT(2,\"__count\",\"#user_id\",1)" },
+                
+                "D1": { "style": 6, "content": "=_t(\"Financial Valuation\")" },
+                "D2": { "style": 6, "format": 2, "content": "=FORMAT.LARGE.NUMBER(ODOO.PIVOT(1,\"expected_revenue\",\"#stage_id\",1))" },
+                "D3": { "style": 6, "format": 2, "content": "=FORMAT.LARGE.NUMBER(ODOO.PIVOT(2,\"expected_revenue\",\"#user_id\",1))" }
+            },
+            "conditionalFormats": [],
+            "figures": [],
+            "areGridLinesVisible": true,
+            "isVisible": true
+        }
+    ],
+    "entities": {},
+    "styles": {
+        "1": { "textColor": "#01666b", "bold": true, "fontSize": 16 },
+        "2": { "bold": true },
+        "3": { "fillColor": "#f2f2f2", "textColor": "#741b47" },
+        "4": { "textColor": "#741b47" },
+        "5": { "align": "right", "bold": true },
+        "6": { "fillColor": "#f2f2f2" },
+        "7": { "textColor": "#01666b" },
+        "8": { "fillColor": "#f2f2f2", "textColor": "" }
+    },
+    "formats": {
+        "1": "#,##0",
+        "2": "0"
+    },
+    "borders": {
+        "1": { "bottom": ["thin", "#000"] },
+        "2": { "top": ["thin", "#000"] }
+    },
+    "revisionId": "START_REVISION",
+    "settings": {
+        "locale": {
+            "name": "English (US)",
+            "code": "en_US",
+            "thousandsSeparator": ",",
+            "decimalSeparator": ".",
+            "dateFormat": "mm/dd/yyyy",
+            "timeFormat": "hh:mm:ss",
+            "formulaArgSeparator": ","
+        }
+    },
+    "chartOdooMenusReferences": {
+        "e35856cf-9090-489b-b055-2d441380d954": "crm.crm_menu_root",
+        "d0171069-d2cd-4c2c-a686-cd7515e93bb5": "crm.crm_menu_root",
+        "5f383918-4073-4f19-9cc9-603216c953ad": "crm.crm_menu_report",
+        "ec57f69b-f2b1-4dfc-990c-91ab61b526bf": "crm.crm_menu_report"
+    },
+    "odooVersion": 4,
+    "lists": {},
+    "listNextId": 1,
+    "pivots": {
+        "1": {
+            "colGroupBys": [],
+            "context": { "group_by_no_leaf": 1, "group_by": [] },
+            "domain": [],
+            "id": "1",
+            "measures": [
+                { "field": "__count" },
+                { "field": "expected_revenue" }
+            ],
+            "model": "crm.lead",
+            "rowGroupBys": ["stage_id"],
+            "name": "Pipeline Status Analysis Matrix",
+            "sortedColumn": {
+                "groupId": [[], []],
+                "measure": "expected_revenue",
+                "order": "desc"
+            }
+        },
+        "2": {
+            "colGroupBys": [],
+            "context": { "group_by_no_leaf": 1, "group_by": [] },
+            "domain": [],
+            "id": "2",
+            "measures": [
+                { "field": "__count" },
+                { "field": "expected_revenue" }
+            ],
+            "model": "crm.lead",
+            "rowGroupBys": ["user_id"],
+            "name": "Salesperson Performance Tracking Matrix",
+            "sortedColumn": {
+                "groupId": [[], []],
+                "measure": "expected_revenue",
+                "order": "desc"
+            }
+        }
+    },
+    "pivotNextId": 3,
+    "globalFilters": [
+        {
+            "id": "filter_crm_date_deadline",
+            "type": "date",
+            "label": "Expected Closing",
+            "defaultValue": "this_month",
+            "rangeType": "relative",
+            "defaultsToCurrentPeriod": true,
+            "pivotFields": {
+                "1": { "field": "date_deadline", "type": "datetime", "offset": 0 },
+                "2": { "field": "date_deadline", "type": "datetime", "offset": 0 }
+            },
+            "listFields": {},
+            "graphFields": {
+                "e35856cf-9090-489b-b055-2d441380d954": { "field": "date_deadline", "type": "datetime", "offset": 0 },
+                "d0171069-d2cd-4c2c-a686-cd7515e93bb5": { "field": "date_deadline", "type": "datetime", "offset": 0 }
+            }
+        },
+        {
+            "id": "filter_crm_sales_team",
+            "type": "relation",
+            "label": "Sales Team",
+            "modelName": "crm.team",
+            "defaultValue": [],
+            "defaultValueDisplayNames": [],
+            "rangeType": "year",
+            "defaultsToCurrentPeriod": false,
+            "pivotFields": {
+                "1": { "field": "team_id", "type": "many2one" },
+                "2": { "field": "team_id", "type": "many2one" }
+            },
+            "listFields": {},
+            "graphFields": {
+                "e35856cf-9090-489b-b055-2d441380d954": { "field": "team_id", "type": "many2one" },
+                "d0171069-d2cd-4c2c-a686-cd7515e93bb5": { "field": "team_id", "type": "many2one" }
+            }
+        },
+        {
+            "id": "filter_crm_user_id",
+            "type": "relation",
+            "label": "Salesperson",
+            "modelName": "res.users",
+            "defaultValue": [],
+            "defaultValueDisplayNames": [],
+            "rangeType": "year",
+            "defaultsToCurrentPeriod": false,
+            "pivotFields": {
+                "1": { "field": "user_id", "type": "many2one" },
+                "2": { "field": "user_id", "type": "many2one" }
+            },
+            "listFields": {},
+            "graphFields": {
+                "e35856cf-9090-489b-b055-2d441380d954": { "field": "user_id", "type": "many2one" },
+                "d0171069-d2cd-4c2c-a686-cd7515e93bb5": { "field": "user_id", "type": "many2one" }
+            }
+        }
+    ]
+}
